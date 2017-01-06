@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <h2>加入同乡联谊会</h2>
+    <%= simple_form_for @member do |f| %>
+      <%= f.input :name, label: '姓名' %>
+      <%= f.input :phone, label: '电话' %>
+      <%= f.input :wechat, label: '微信号' %>
+      <%= f.input :suburb, label: '澳洲所在城市' %>
+      <%= f.input :work, label: '职业' %>
+      <%= f.input :email, label: '邮件' %>
+      <%= f.button :submit, class: 'btn-primary' %>
+    <% end %>
+  </div>
+</div>

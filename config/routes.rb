@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :members, only: [:new, :create, :index]
 
 #Casein routes
 namespace :casein do

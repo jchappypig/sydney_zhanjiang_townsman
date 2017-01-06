@@ -1,0 +1,14 @@
+<h2>澳大利亚湛江同乡联谊会会员</h2>
+<div class="row">
+  <% @members.each do |member| %>
+    <div class="col-sm-4 col-md-3 ">
+      <div class="thumbnail">
+        <img src="http://placehold.it/200x150" alt="...">
+        <div class="caption text-center">
+          <h3><%= member.name %></h3>
+          <p><%= member.suburb %></p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
